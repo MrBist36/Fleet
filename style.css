@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+    background-color: #4d4d4d;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    line-height: 85px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav ul li {
+    margin: 0 15px;
+    color: rgb(17, 2, 2);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+a:hover{
+  background-color: aqua;
+}
+
+table , th, td, thead {
+  border-collapse: collapse;
+  border-style: solid;
+  padding:10px;
+}
+
+
+
+
+.logoo{
+  display: flex;
+}
+
+.homee{
+  background: url('school.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  
+}
+
+.homee p{
+  color: rgb(220, 243, 8);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  padding: 100px 100px;
+  font-weight: bold;
+}
+
+.homee h1{
+  color: red;
+}
+.aboutt p{
+  padding: 30px 0px 20px 0px;
+  text-align: justify;
+  font-size: large;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid 361c1c;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #574caf;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #615f5f;}
+
+footer {
+  background-color: #361c1c;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.contactt h2{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contactt form{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contactt .contact-info{
+  padding: 10px 15px;
+  font-size: 1.3em;
+  text-align: center;
+} 
+
+.contact-info input{
+  padding: 10px 20px;
+  width: 50%;
+  margin: 5px 10px;
+  text-align: center;
+
+}
+
+.contact-info label{
+  display: block;
+}
+
+.contact-info button{
+  size: 100px;
+}
+#home-p2{
+  position: absolute;
+  bottom: -200px;
+  right: 400px;
+  font-size: 18px;
+  text-align: justify;
+ 
+}
+
+#home-p{
+  position: relative;
+  top: 0px;
+  text-align: justify;
+}
+
+button{
+  box-shadow: #361c1c;
+  background-color: rgb(232, 13, 21);
+  padding: 15px 15px;
+  border-radius: 10px;
+  width:auto;
+}
+
+button:hover{
+  background-color: green;
+  cursor: pointer;
+}
