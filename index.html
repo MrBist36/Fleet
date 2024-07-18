@@ -3,6 +3,7 @@
     <head>
         <title>Mr Bist</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <nav>
@@ -69,7 +70,7 @@
 
         <div class="contactt" id="contactus-sec">
             <h2 style="text-align: center;">Contact US</h2>
-            <form>
+            <form id="myform">
                 <div class="contact-info">
                     <label for="name">Name</label>
                     <input id="name" type="text">
@@ -79,15 +80,15 @@
                     <input id="email" type="email">
                 </div>
                 <div class="contact-info">
-                    <label for="phone-number">Phone Number</label>
-                    <input id="phone-number" type="text">
+                    <label for="phoneno">Phone Number</label>
+                    <input id="phoneno" type="text">
                 </div>
                 <div class="contact-info">
                     <label for="message">Message</label>
-                    <input type="text">
+                    <input type="text" id="message">
                 </div>
                 <div class="contact-info">
-                    <button>Submit</button>
+                    <button onclick="formHandler(event)">Submit</button>
                 </div>
             </form>
         </div>
