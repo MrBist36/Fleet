@@ -1,4 +1,6 @@
-function formHandler(event) {
+//FOR CONTACTUS PART
+
+function contactFormHandler(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value.trim();
@@ -60,7 +62,7 @@ function formHandler(event) {
         JSON.stringify({
             name:name,
             email:email,
-            phoneNumber:phoneno,
+            phoneNumber: phoneNumber,
             message:message,
         })
        )

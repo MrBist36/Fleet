@@ -1,4 +1,4 @@
-/* FOR BODY */
+/*FOR BODY */
 
 *{
   margin: 0;
@@ -48,7 +48,7 @@ a:hover{
 /* FOR HOME SECTION*/
 
 .homee{
-  background: url('school.jpg');
+  background: url('../images/school.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -71,17 +71,33 @@ a:hover{
 
 /* FOR ABOUT SECTION*/
 
+.aboutt{
+  background-color: #704141;
+}
+
+.aboutt h2{
+  color:white;
+  text-decoration:underline;
+}
+
+
 .aboutt p{
   padding: 30px 0px 20px 0px;
-  text-align: justify;
+  text-align:justify;
   font-size: large;
+  color: white;
 }
 
 /* FOR SERVICES AND ITS TABLE*/
 
+
 table {
   width: 100%;
   border-collapse: collapse;
+  background-image: url('../images/services.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
 th, td {
@@ -234,7 +250,7 @@ footer {
 }
 
 .contactt{
-  background: url('contact.jpg');
+  background: url('../images/contact.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -260,6 +276,7 @@ button:hover{
   background-color: #f3872e;
   border-radius: 20px;
   color:white;
+  margin-left: 100px;
 }
 #loginbutton:hover{
   background-color: #13e42b;
@@ -268,6 +285,7 @@ button:hover{
   background-color: #f3872e;
   border-radius: 20px;
   color:white;
+  margin-left: 20px;
 }
 #registerbutton:hover{
   background-color: #13e42b;
@@ -334,7 +352,7 @@ form.signin h3 {
 }
 
 .outer{
-  background: url('register.jpg');
+  background: url('../images/register.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -420,8 +438,24 @@ form.login h3 {
 }
 
 .outerlogin{
-  background: url('register.jpg');
+  background: url('../images/register.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+/* Redirect Home button */
+
+#redirecthome{
+  background-color: #f3872e;
+  border-radius: 20px;
+  color:white;
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 900px;
+ 
+}
+#redirecthome:hover{
+  background-color: #13e42b;
 }
