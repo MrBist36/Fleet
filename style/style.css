@@ -1,6 +1,6 @@
 /*FOR BODY */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,81 +9,83 @@
 /* FOR NAVIGATION */
 
 nav {
-    background-color: #4d4d4d;
-    padding: 10px 0;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    line-height: 85px;
-    color:white;
+  background-color: #4d4d4d;
+  padding: 10px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  line-height: 85px;
+  color: white;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 
 nav ul li {
-    margin: 0 15px;
-    color: white;
+  margin: 0 15px;
+  color: white;
 }
 
-a{
+a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: large;
   font-weight: bold;
 }
-a:hover{
+
+a:hover {
   background-color: #f3872e;
   border-radius: 2px;
+  cursor: pointer;
 }
 
-.logoo{
+.logo {
   display: flex;
 }
 
 /* FOR HOME SECTION*/
 
-.homee{
+.homee {
   background: url('../images/school.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  
+
 }
 
-#paragraphhome{
+#paragraphhome {
   color: #ffffff;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: larger;
-  padding:100px 800px 0px 20px;
+  padding: 100px 800px 0px 20px;
   font-weight: bold;
-  text-align:justify;
+  text-align: justify;
   text-shadow: #f2f2f2;
 }
 
-.homee h1{
+.homee h1 {
   color: red;
 }
 
 /* FOR ABOUT SECTION*/
 
-.aboutt{
+.aboutt {
   background-color: #704141;
 }
 
-.aboutt h2{
-  color:white;
-  text-decoration:underline;
+.aboutt h2 {
+  color: white;
+  text-decoration: underline;
 }
 
 
-.aboutt p{
+.aboutt p {
   padding: 30px 0px 20px 0px;
-  text-align:justify;
+  text-align: justify;
   font-size: large;
   color: white;
 }
@@ -100,7 +102,8 @@ table {
   background-size: cover;
 }
 
-th, td {
+th,
+td {
   border: 1px solid 361c1c;
   padding: 8px;
   text-align: left;
@@ -116,12 +119,16 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-  background-color: #615f5f;}
+  background-color: #615f5f;
+}
 
-table , th, td, thead {
+table,
+th,
+td,
+thead {
   border-collapse: collapse;
   border-style: solid;
-  padding:10px;
+  padding: 10px;
 }
 
 /* FOR FOOTER */
@@ -133,41 +140,46 @@ footer {
   padding: 10px 0;
   bottom: 0;
   width: 100%;
-  
+
 }
 
 /* FOR CONTACT FORM SECTION */
-#contactheading{
+#contactheading {
   text-align: left;
   font-weight: bold;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  color:rgb(205, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(205, 0, 0);
   position: relative;
   animation: contactanimation;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-@keyframes contactanimation{
+
+@keyframes contactanimation {
   0% {
     color: rgb(85, 223, 15);
     left: 0px;
     top: 0px;
   }
+
   25% {
     color: rgb(255, 242, 0);
     top: 0px;
     left: 200px;
   }
+
   50% {
     color: rgb(255, 0, 225);
     left: 200px;
     top: 600px;
   }
+
   75% {
     color: rgb(67, 255, 25);
-    left:0px;
+    left: 0px;
     top: 600px;
   }
+
   100% {
     color: rgb(8, 234, 255);
     left: 0px;
@@ -175,37 +187,37 @@ footer {
   }
 }
 
-#myform{
+#myform {
   background-color: #615e80;
-  padding:20px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   border: 3px solid;
 }
 
-.contactt h2{
+.contactt h2 {
   text-align: center;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
-.contactt form{
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+.contactt form {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contactt .contact-info{
+.contactt .contact-info {
   padding: 10px 15px;
   font-size: 1.3em;
   text-align: center;
-} 
+}
 
-.contact-info input{
+.contact-info input {
   width: 100%;
   padding: 10px;
   border: 1px solid #cccccc;
@@ -219,14 +231,15 @@ footer {
   border-color: #007bff;
   outline: none;
 }
-.contact-info label{
+
+.contact-info label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
   color: #060606;
 }
 
-.contact-info button{
+.contact-info button {
   width: 100%;
   padding: 10px;
   background-color: #007bff;
@@ -242,14 +255,14 @@ footer {
   background-color: #0056b3;
 }
 
-#myform{
+#myform {
   width: 100%;
   max-width: 450px;
   position: relative;
-  top:15%;
+  top: 15%;
 }
 
-.contactt{
+.contactt {
   background: url('../images/contact.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -257,37 +270,40 @@ footer {
 }
 
 /* For Buttons */
-button{
+button {
   box-shadow: #361c1c;
   background-color: rgb(232, 13, 21);
   padding: 15px 15px;
   border-radius: 10px;
-  width:auto;
+  width: auto;
 }
 
-button:hover{
+button:hover {
   background-color: green;
   cursor: pointer;
 }
 
 /* LOG IN ans REGISTER HTML*/
 
-#loginbutton{
+#loginbutton {
   background-color: #f3872e;
   border-radius: 20px;
-  color:white;
+  color: white;
   margin-left: 100px;
 }
-#loginbutton:hover{
+
+#loginbutton:hover {
   background-color: #13e42b;
 }
-#registerbutton{
+
+#registerbutton {
   background-color: #f3872e;
   border-radius: 20px;
-  color:white;
+  color: white;
   margin-left: 20px;
 }
-#registerbutton:hover{
+
+#registerbutton:hover {
   background-color: #13e42b;
 }
 
@@ -296,7 +312,7 @@ button:hover{
 
 form.signin {
   background-color: #615e80;
-  padding:20px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
@@ -351,18 +367,18 @@ form.signin h3 {
   background-color: #0056b3;
 }
 
-.outer{
+.outer {
   background: url('../images/register.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-.signin{
+.signin {
   width: 90%;
   max-width: 450px;
-  position:absolute;
-  top:50%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
@@ -372,9 +388,9 @@ form.signin h3 {
 
 
 /* FOR LOGIN PAGE SEPERATE PAGE */
-form.login{
+form.login {
   background-color: #615e80;
-  padding:20px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
@@ -387,18 +403,18 @@ form.login h3 {
   text-align: center;
 }
 
-.logininfo{
+.logininfo {
   margin-bottom: 15px;
 }
 
-.logininfo label{
+.logininfo label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
   color: #ffffff;
 }
 
-.logininfo input{
+.logininfo input {
   width: 100%;
   padding: 10px;
   border: 1px solid #cccccc;
@@ -413,7 +429,7 @@ form.login h3 {
   outline: none;
 }
 
-.logininfo button{
+.logininfo button {
   width: 100%;
   padding: 10px;
   background-color: #007bff;
@@ -425,11 +441,11 @@ form.login h3 {
   transition: background-color 0.3s ease;
 }
 
-.login{
+.login {
   width: 90%;
   max-width: 450px;
-  position:absolute;
-  top:50%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
@@ -437,7 +453,7 @@ form.login h3 {
   text-align: center;
 }
 
-.outerlogin{
+.outerlogin {
   background: url('../images/register.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -446,16 +462,17 @@ form.login h3 {
 
 /* Redirect Home button */
 
-#redirecthome{
+#redirecthome {
   background-color: #f3872e;
   border-radius: 20px;
-  color:white;
+  color: white;
   position: relative;
   display: flex;
   margin-top: 20px;
   margin-left: 900px;
- 
+
 }
-#redirecthome:hover{
+
+#redirecthome:hover {
   background-color: #13e42b;
 }

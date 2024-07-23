@@ -3,11 +3,14 @@ function homeReturn(){
     location.href='../index.html';
 }
 
+//validation and json post
 async function loginFormHandler(event) {
     event.preventDefault();
 
     const emailid = document.getElementById('email').value.trim();
     const validpassword = document.getElementById('pass').value.trim();
+
+    //FOR JSON FILE
     let data = {email: emailid, password: validpassword}
     console.log(data)
 
@@ -47,14 +50,23 @@ async function loginFormHandler(event) {
         document.querySelector("form.login").reset();
     }
 //POST API
-    let response = await fetch("https://reqres.in/api/login", {
-        method: "post", 
-        headers: {
-          "Content-Type": "application/json"  
-        },
-        body: JSON.stringify(data)
-    })
-    let loginData = await response.json();
-    console.log(loginData.token);
+    try {
+        let response = await fetch("https://reqres.in/api/login", {
+            method: "post", 
+            headers: {
+              "Content-Type": "application/json"  
+            },
+            body: JSON.stringify(data)
+        });
+        if(response.status !== 200) {
+            throw new Error("Login failed!");
+        }
+        let loginData = await response.json();
+        console.log(loginData.token);
+        localStorage.setItem("loginToken", loginData.token);
+        location.href = "../index.html"
+    } catch(error) {
+        throw error;
+    }
 
 }

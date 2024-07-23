@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../style/style.css">
-        <title>Log In</title>
-    </head>
-    <body>
-        <nav>
-            <div class="logoo">
-                <img src="../images/logoo.png" width="80px" line-height="50px">
-                <h1>FleetPanda Academy</h1>
+
+<head>
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Log In</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../images/logo.png" width="80px" line-height="50px">
+            <h1>FleetPanda Academy</h1>
             <div>
-            
-            <button id="redirecthome" onclick="homeReturn()">Go To Home</button>
-            
-        </nav>
-        <div class="outerlogin">
-            <form class="login"><h3>Log In</h3>
-                <div class="logininfo">
-                    <label for="email">Email</label>
-                    <input id="email" type="text"> 
-                 </div>
 
-                 <div class="logininfo">
-                    <label for="pass">Password</label>
-                    <input id="pass" type="password">
-                 </div>
+                <button id="redirecthome" onclick="homeReturn()">Go To Home</button>
 
-                <div class="logininfo">
-                    <button onclick="loginFormHandler(event)">Log In</button>
-                </div>
-            </form>
-        </div>
-        <script src="../script/login.js"></script>
-    </body>
+    </nav>
+    <div class="outerlogin">
+        <form class="login">
+            <h3>Log In</h3>
+            <div class="logininfo">
+                <label for="email">Email</label>
+                <input id="email" type="text">
+            </div>
+
+            <div class="logininfo">
+                <label for="pass">Password</label>
+                <input id="pass" type="password">
+            </div>
+
+            <div class="logininfo">
+                <button onclick="loginFormHandler(event)">Log In</button>
+            </div>
+        </form>
+    </div>
+    <script src="../script/login.js"></script>
+</body>
+
 </html>

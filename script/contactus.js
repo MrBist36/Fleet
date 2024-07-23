@@ -9,7 +9,7 @@ function contactFormHandler(event) {
     const message = document.getElementById('message').value.trim();
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phonePattern = /^\d{10}$/; 
+    const phonePattern = /^\d{10}$/;
 
     let errors = {};
 
@@ -33,14 +33,14 @@ function contactFormHandler(event) {
         errors.message = 'Message is required.';
     }
 
-    
+
     document.getElementById('name').placeholder = '';
     document.getElementById('email').placeholder = '';
     document.getElementById('phoneno').placeholder = '';
     document.getElementById('message').placeholder = '';
 
     if (Object.keys(errors).length > 0) {
-        
+
         if (errors.name) {
             document.getElementById('name').value = '';
             document.getElementById('name').placeholder = errors.name;
@@ -58,15 +58,15 @@ function contactFormHandler(event) {
             document.getElementById('message').placeholder = errors.message;
         }
     } else {
-       alert(
-        JSON.stringify({
-            name:name,
-            email:email,
-            phoneNumber: phoneNumber,
-            message:message,
-        })
-       )
-       document.getElementById("myform").reset();
+        alert(
+            JSON.stringify({
+                name,
+                email,
+                phoneNumber,
+                message,
+            })
+        )
+        document.getElementById("myform").reset();
     }
-   
+
 }

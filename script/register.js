@@ -1,6 +1,6 @@
 //Return Home Button
-function homeReturn(){
-    location.href='../index.html';
+function homeReturn() {
+    location.href = '../index.html';
 }
 //FORM VALIDATION
 
@@ -14,19 +14,19 @@ function signinFormHandler(event) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     let errors = {};
-        if(!userid){
-            errors.userid="User Name is required."
-        }
-        if (!emailid) {
-            errors.emailid = 'Email is required.';
-        } else if (!emailPattern.test(emailid)) {
-            errors.emailid = 'Please enter a valid email address.';
-        }
+    if (!userid) {
+        errors.userid = "User Name is required."
+    }
+    if (!emailid) {
+        errors.emailid = 'Email is required.';
+    } else if (!emailPattern.test(emailid)) {
+        errors.emailid = 'Please enter a valid email address.';
+    }
 
-        if (!validpassword) {
-            errors.validpassword = 'Enter the password';
-        }
-    
+    if (!validpassword) {
+        errors.validpassword = 'Enter the password';
+    }
+
     document.getElementById('username').placeholder = '';
     document.getElementById('email').placeholder = '';
     document.getElementById('pass').placeholder = '';
@@ -46,15 +46,15 @@ function signinFormHandler(event) {
         if (errors.validpassword) {
             document.getElementById('pass').value = '';
             document.getElementById('pass').placeholder = errors.validpassword;
-            }
-        }else {
-            alert(
-                JSON.stringify({
-                    username: userid,
-                    email: emailid,
-                    pass: validpassword,    
-                })
-            );
-                document.querySelector("form.signin").reset();
         }
+    } else {
+        alert(
+            JSON.stringify({
+                username: userid,
+                email: emailid,
+                pass: validpassword,
+            })
+        );
+        document.querySelector("form.signin").reset();
     }
+}

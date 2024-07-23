@@ -1,107 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>FleetPanda Academy</title>
-        <link rel="stylesheet" href="style/style.css">
-        
-    </head>
-    <body>
-        <nav>
-            <div class="logoo">
-                <img src="images/logoo.png" width="80px" line-height="50px">
-                <h1>FleetPanda Academy</h1>
-                <div>
-                    <button id="loginbutton">Log In</button>
-                </div>
-                <div>
-                    <button id="registerbutton">Register</button>
-                </div>
+
+<head>
+    <title>FleetPanda Academy</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" width="80px" line-height="50px">
+            <h1>FleetPanda Academy</h1>
+            <div>
+                <button id="loginbutton">Log In</button>
             </div>
             <div>
-                <ul>
-                    <li><a href="#home-sec">Home</a></li>
-                    <li><a href="#about-sec">About</a></li>
-                    <li><a href="#services-sec">Services</a></li>
-                    <li><a href="#contactus-sec">Contact Us</a></li>
-                </ul>
+                <button id="registerbutton">Register</button>
             </div>
-        </nav>
-
-        <div class="homee" id="home-sec">   
-            <p id="paragraphhome">
-                Welcome to our school's home page! Here at FleetPanda Academy, we are committed to fostering a nurturing and inclusive environment where every student can thrive. Our dedicated staff, innovative programs, and vibrant community work together to support academic excellence, personal growth, and social responsibility. We invite you to explore our website to learn more about our mission, values, and the diverse opportunities available to our students. Join us on this exciting journey of discovery and achievement!
-                <br><br> 
-                ~Place for holistic development of children.
-            </p>
         </div>
-
-        <div class="aboutt" id="about-sec">
-            <h2 style="text-align: center;">About</h2>
-            <p>
-                At FleetPanda Academy, our mission is to provide a holistic education that empowers students to become lifelong learners and responsible global citizens. Established in 1980, we have a proud tradition of academic excellence and community engagement. Our experienced educators employ a student-centered approach, fostering critical thinking, creativity, and collaboration. We offer a diverse range of programs and extracurricular activities designed to cater to the unique interests and talents of each student. Committed to creating a safe and supportive learning environment, we encourage students to pursue their passions and achieve their full potential. Discover more about our history, values, and the dedicated team that makes FleetPanda Academy a vibrant place for learning and growth.
-            </p>
+        <div>
+            <ul>
+                <li><a href="#home-sec">Home</a></li>
+                <li><a href="#about-sec">About</a></li>
+                <li><a href="#services-sec">Services</a></li>
+                <li><a href="#contactus-sec">Contact Us</a></li>
+                <li class="blog"><a href="./app/blog.html">Blog</a></li>
+                <li class="logout"><a>Log Out</a></li> <!--style="display: none;" */ -->
+            </ul>
         </div>
+    </nav>
 
-        <div class="servicee" id="services-sec">
-            <h2 style="text-align: center;">Services</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Services</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Academic Services</td>
-                        <td>Personalized learning plans, advanced placement courses, and tutoring programs.</td>
-                    </tr>
-                    <tr>
-                        <td>Counseling Service</td>
-                        <td>Individual and group counseling, mental health support, career guidance, and college preparation.</td>
-                    </tr>
-                    <tr>
-                        <td>Extracurricular Programs</td>
-                        <td>Sports, arts, and various clubs to promote a balanced and enriching school experience.</td>
-                    </tr>
-                    <tr>
-                        <td>Health Services</td>
-                        <td>On-site health services to ensure the physical well-being of students.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div class="homee" id="home-sec">
+        <p id="paragraphhome">
+            Welcome to our school's home page! Here at FleetPanda Academy, we are committed to fostering a nurturing and
+            inclusive environment where every student can thrive. Our dedicated staff, innovative programs, and vibrant
+            community work together to support academic excellence, personal growth, and social responsibility. We
+            invite you to explore our website to learn more about our mission, values, and the diverse opportunities
+            available to our students. Join us on this exciting journey of discovery and achievement!
+            <br><br>
+            ~Place for holistic development of children.
+        </p>
+    </div>
 
-        <div class="contactt" id="contactus-sec">
-            <h2 id="contactheading">Feel Free To Reach Us 👉</h2>
-            <form id="myform">
-                <h2 style="text-align: center;">Contact US</h2>
-                <div class="contact-info">
-                    <label for="name">Name</label>
-                    <input id="name" type="text">
-                </div>
-                <div class="contact-info">
-                    <label for="email">Email</label>
-                    <input id="email" type="email">
-                </div>
-                <div class="contact-info">
-                    <label for="phoneno">Phone Number</label>
-                    <input id="phoneno" type="text">
-                </div>
-                <div class="contact-info">
-                    <label for="message">Message</label>
-                    <input type="text" id="message">
-                </div>
-                <div class="contact-info">
-                    <button onclick="contactFormHandler(event)">Submit</button>
-                </div>
-            </form>
-        </div>
+    <div class="aboutt" id="about-sec">
+        <h2 style="text-align: center;">About</h2>
+        <p>
+            At FleetPanda Academy, our mission is to provide a holistic education that empowers students to become
+            lifelong learners and responsible global citizens. Established in 1980, we have a proud tradition of
+            academic excellence and community engagement. Our experienced educators employ a student-centered approach,
+            fostering critical thinking, creativity, and collaboration. We offer a diverse range of programs and
+            extracurricular activities designed to cater to the unique interests and talents of each student. Committed
+            to creating a safe and supportive learning environment, we encourage students to pursue their passions and
+            achieve their full potential. Discover more about our history, values, and the dedicated team that makes
+            FleetPanda Academy a vibrant place for learning and growth.
+        </p>
+    </div>
 
-        <footer>
-            <p>This website is only for information purpose. Copyright @FleetPanda Nepal</p>
-        </footer>
-        <script src="./script/script.js"></script>
-        <script src="script/contactus.js"></script>
-    </body>
+    <div class="servicee" id="services-sec">
+        <h2 style="text-align: center;">Services</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Services</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Academic Services</td>
+                    <td>Personalized learning plans, advanced placement courses, and tutoring programs.</td>
+                </tr>
+                <tr>
+                    <td>Counseling Service</td>
+                    <td>Individual and group counseling, mental health support, career guidance, and college
+                        preparation.</td>
+                </tr>
+                <tr>
+                    <td>Extracurricular Programs</td>
+                    <td>Sports, arts, and various clubs to promote a balanced and enriching school experience.</td>
+                </tr>
+                <tr>
+                    <td>Health Services</td>
+                    <td>On-site health services to ensure the physical well-being of students.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="contactt" id="contactus-sec">
+        <h2 id="contactheading">Feel Free To Reach Us 👉</h2>
+        <form id="myform">
+            <h2 style="text-align: center;">Contact US</h2>
+            <div class="contact-info">
+                <label for="name">Name</label>
+                <input id="name" type="text">
+            </div>
+            <div class="contact-info">
+                <label for="email">Email</label>
+                <input id="email" type="email">
+            </div>
+            <div class="contact-info">
+                <label for="phoneno">Phone Number</label>
+                <input id="phoneno" type="text">
+            </div>
+            <div class="contact-info">
+                <label for="message">Message</label>
+                <input type="text" id="message">
+            </div>
+            <div class="contact-info">
+                <button onclick="contactFormHandler(event)">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>This website is only for information purpose. Copyright @FleetPanda Nepal</p>
+    </footer>
+    <script src="./script/script.js"></script>
+    <script src="script/contactus.js"></script>
+</body>
+
 </html>
