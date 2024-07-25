@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link rel="stylesheet" href="../style/style.css">
     <title>Log In</title>
 </head>
-
 <body>
     <nav>
         <div class="logo">
             <img src="../images/logo.png" width="80px" line-height="50px">
             <h1>FleetPanda Academy</h1>
             <div>
-
-                <button id="redirecthome" onclick="homeReturn()">Go To Home</button>
-
+                <button id="redirecthome">Go To Home</button>
+            </div>
+        </div>
     </nav>
     <div class="outerlogin">
-        <form class="login">
+        <form class="login" id="loginForm">
             <h3>Log In</h3>
             <div class="logininfo">
                 <label for="email">Email</label>
-                <input id="email" type="text">
+                <input id="email" type="email">
             </div>
-
             <div class="logininfo">
                 <label for="pass">Password</label>
                 <input id="pass" type="password">
             </div>
-
             <div class="logininfo">
-                <button onclick="loginFormHandler(event)">Log In</button>
+                <button type="submit">Log In</button>
             </div>
         </form>
     </div>
-    <script src="../script/login.js"></script>
+    <script type="module" src="../script/login.js"></script>
 </body>
-
 </html>

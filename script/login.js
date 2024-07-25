@@ -1,21 +1,21 @@
-//Return Home Button
-function homeReturn(){
-    location.href='../index.html';
+import { request } from './apiHandler.js'; // Ensure the path and extension are correct
+
+// Define the functions before adding event listeners
+function homeReturn() {
+    location.href = '../index.html';
 }
 
-//validation and json post
 async function loginFormHandler(event) {
     event.preventDefault();
+    const LOGIN_URL = "https://reqres.in/api/login";
 
     const emailid = document.getElementById('email').value.trim();
     const validpassword = document.getElementById('pass').value.trim();
 
-    //FOR JSON FILE
-    let data = {email: emailid, password: validpassword}
-    console.log(data)
+    console.log('Email:', emailid); // Debugging log
+    console.log('Password:', validpassword); // Debugging log
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
     let errors = {};
 
     if (!emailid) {
@@ -41,32 +41,28 @@ async function loginFormHandler(event) {
             document.getElementById('pass').placeholder = errors.validpassword;
         }
     } else {
-        alert(
-            JSON.stringify({
-                email: emailid,
-                pass: validpassword,
-            })
-        );
-        document.querySelector("form.login").reset();
-    }
-//POST API
-    try {
-        let response = await fetch("https://reqres.in/api/login", {
-            method: "post", 
-            headers: {
-              "Content-Type": "application/json"  
-            },
-            body: JSON.stringify(data)
-        });
-        if(response.status !== 200) {
-            throw new Error("Login failed!");
-        }
-        let loginData = await response.json();
-        console.log(loginData.token);
-        localStorage.setItem("loginToken", loginData.token);
-        location.href = "../index.html"
-    } catch(error) {
-        throw error;
-    }
+        try {
+            let response = await request(LOGIN_URL, "POST", { email: emailid, password: validpassword });
 
+            console.log('Response:', response); // Debugging log
+
+            if (response.error) {
+                throw new Error(response.message);
+            }
+
+            // Check if the response has a token, indicating a successful login
+            if (response.data && response.data.token) {
+                localStorage.setItem("loginToken", response.data.token);
+                location.href = "../index.html";
+            } else {
+                throw new Error("Invalid login credentials");
+            }
+        } catch (error) {
+            alert(error.message);
+        }
+    }
 }
+
+// Add event listeners after the function definitions
+document.getElementById('redirecthome').addEventListener('click', homeReturn);
+document.getElementById('loginForm').addEventListener('submit', loginFormHandler);
